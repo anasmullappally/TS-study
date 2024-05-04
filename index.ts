@@ -138,23 +138,42 @@
 
 //optional picking
 
-// type User = {
-//   name: string;
-//   age: number;
-// };
+type User = {
+  name: string;
+  age: number;
+};
 
 // const userDetails: Pick<User, "name"> = {
 //   // picked  are required
 //   name: "Hello",
 // };
 
-//optional unpicking
-type User = {
-  name: string;
-  age: number;
-};
+// type User = {
+//   name: string;
+//   age: number;
+//   salary: number;
+// };
 
-const userDetails: Pick<User, "name"> = {
-  // picked  are required
-  name: "Hello",
-};
+// const user: Omit<User, "name" | "salary"> = {
+//   age: 25,
+//   // salary: 1000,
+// };
+
+// type StatusType = "pending" | "completed" | "failed";
+// const status1: Exclude<StatusType, "pending" | "completed"> = "failed";
+
+// if we do not know properties
+// type Food = Record<string, string>;
+// const food: Food = {
+//   PiZZA: "aaa",
+//   salad: "555",
+// };
+
+// type Food = {
+//   [index: string]: string;
+// };
+// const food: Food = {
+//   PiZZA: "aaa",
+//   salad: "555",
+// };
+
