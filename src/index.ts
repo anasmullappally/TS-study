@@ -177,3 +177,44 @@ type User = {
 //   salad: "555",
 // };
 
+// any/unknown/never/void/null
+
+// let username: any = "Abc";
+// username.push(); // can't use
+
+// let username: unknown = "Abc";
+// const newValue = username as string; // typecasting
+// newValue.
+
+// never
+// function throwError(message: string): never {
+//   // its not returning anything
+//   throw new Error(message);
+// }
+
+//void
+// function throwError(message: string): void {
+//   // its not returning anything
+//   console.log(message);
+// }
+
+// type UserData = {
+//   name: string;
+//   age: number;
+//   getUsername: () => string;
+//   getAge(): number;
+// };
+
+// const currentUser: UserData = {
+//   name: "Anas",
+//   age: 25,
+//   getAge() {
+//     return this.age;
+//   },
+//   getUsername() {
+//     return this.name;
+//   },
+// };
+
+// console.log(currentUser.getUsername());
+ 
